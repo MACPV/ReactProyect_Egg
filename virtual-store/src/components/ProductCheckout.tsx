@@ -2,9 +2,32 @@ import { useState } from "react";
 import products from "../assets/products.js";
 import styles from "./ProductCheckout.module.css";
 
+
+
 function ProductCheckout(id) {
     const [quantity, setQuantity] = useState(1);
     const [button, setButton] = useState(false);
+    type Product = {
+        id: string;
+        title: string;
+        price: number;
+    }
+    let productInStorage: Product []= [];
+    !localStorage.getItem("cart") ? localStorage.setItem("cart", JSON.stringify([])) : productInStorage = JSON.parse(localStorage.getItem("cart") || "[]");
+        
+    const manageCart = () => {
+        const one = productInStorage.find((each) => each.id === id.id);
+        if(!one) {
+            productInStorage.push({id: product.id, title: product.title, price: product.price});
+            setButton(true);
+        } else {
+            productInStorage = productInStorage.filter((each) => each.id !== id.id);
+            setButton(false);
+        }
+        localStorage.setItem("cart", JSON.stringify(productInStorage));
+    }
+    
+
     const productId = id.id
     const product = products.find((product) => product.id === productId);
     return (
@@ -37,8 +60,8 @@ function ProductCheckout(id) {
                     </ul>
                     <div className={styles["checkout-process"]}>
                         <div className={styles["top"]}>
-                            <input id="input-quantity" type="number" min="1"  defaultValue={quantity} onChange={(event) => setQuantity(Number(event.target.value)) } />
-                            <button type="button" className={button ? styles["remove-btn"] : styles["cart-btn"]} onClick={() => setButton(!button)}>
+                            <input id="input-quantity" type="number" min="1" defaultValue={quantity} onChange={(event) => setQuantity(Number(event.target.value))} />
+                            <button type="button" className={button ? styles["remove-btn"] : styles["cart-btn"]} onClick={manageCart}>
                                 {button ? "Remove from cart" : "Add to cart"}
                             </button>
                         </div>
