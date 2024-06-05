@@ -12,7 +12,7 @@ class Product {
 }
 
 const prod1 = new Product(
-    "P7Q8R9",
+    "P7Q8R91",
     "iPad Pro 12.9",
     "The iPad Pro 12.9 is a stunning piece of technology, boasting a large 12.9-inch Retina display with ProMotion technology. With 256GB of storage, this iPad provides ample space for all your files, apps, and multimedia content. The sleek and slim design, combined with the silver color, gives it a sophisticated look. Enjoy seamless connectivity with the WiFi feature. Capture your memorable moments with the high-quality camera and relive them on the impressive screen. Whether you're a professional artist, student, or just someone who appreciates cutting-edge technology, the iPad Pro 12.9 is a versatile device that meets all your needs.",
     900000,
@@ -38,7 +38,7 @@ const prod2 = new Product(
     true
 );
 const prod3 = new Product(
-    "S1T2U3",
+    "S1T2U31",
     "Sony WH-1000XM4",
     "Immerse yourself in the world of music with the Sony WH-1000XM4 wireless headphones. These over-ear headphones feature industry-leading noise cancellation technology, ensuring a premium listening experience in any environment. The sleek black color adds a touch of elegance. With multiple touch controls, you can easily manage your music playback and calls. The headphones are equipped with a powerful battery that provides hours of listening on a single charge. Whether you're commuting, traveling, or simply enjoying your favorite tunes at home, the Sony WH-1000XM4 delivers unparalleled sound quality and comfort.",
     250000,
@@ -66,7 +66,7 @@ const prod4 = new Product(
     true
 );
 const prod5 = new Product(
-    "V4W5X6",
+    "V4W5X61",
     "GoPro HERO9 Black",
     "Capture your adventures in stunning detail with the GoPro HERO9 Black. This action camera boasts 5K video recording and is waterproof, making it perfect for all your outdoor activities. The sleek black design adds a touch of style to your gear. With multiple shooting modes and advanced features, the HERO9 Black is a versatile tool for both professionals and enthusiasts. Share your experiences with the world through high-quality footage and photos. Whether you're diving into the ocean, skiing down the slopes, or simply exploring your surroundings, the GoPro HERO9 Black is your reliable companion.",
     400000,
@@ -92,7 +92,7 @@ const prod6 = new Product(
     false
 );
 const prod7 = new Product(
-    "Y7Z8A9",
+    "Y7Z8A91",
     "Kindle Paperwhite",
     "Experience the joy of reading with the Kindle Paperwhite. This e-reader features a 6-inch high-resolution display with built-in lighting, providing a comfortable reading experience in any lighting conditions. With WiFi connectivity, you can easily access a vast library of books and other content. The sleek design and compact size make it perfect for on-the-go reading. Whether you're a bookworm or a casual reader, the Kindle Paperwhite offers a convenient and enjoyable way to indulge in your favorite literary adventures.",
     100000,
@@ -118,7 +118,7 @@ const prod8 = new Product(
     true
 );
 const prod9 = new Product(
-    "B1C2D3",
+    "B1C2D31",
     "Bose SoundLink Revolve",
     "Elevate your audio experience with the Bose SoundLink Revolve Bluetooth speaker. Its sleek design and black color make it a stylish addition to any space. Enjoy 360-degree sound coverage, creating an immersive listening experience. With wireless connectivity, you can easily connect your devices and play your favorite music. The built-in rechargeable battery ensures hours of playback on a single charge. Whether you're hosting a party or enjoying a quiet evening at home, the Bose SoundLink Revolve delivers rich and clear audio that enhances every moment.",
     200000,
@@ -146,7 +146,7 @@ const prod10 = new Product(
     true
 );
 const prod11 = new Product(
-    "A1B2C3",
+    "A1B2C31",
     "MacBook Pro 13'4",
     "Experience the power of creativity with the MacBook Pro 13'4. Featuring 8GB of RAM and 512GB of storage, this laptop provides the performance and storage capacity needed for demanding tasks. The sleek design in silver and space gray adds a touch of sophistication. The high-resolution Retina display brings your visuals to life, whether you're editing photos, creating videos, or simply browsing the web. With the latest technology and a lightweight build, the MacBook Pro 13'4 is the perfect companion for professionals and creative individuals alike.",
     750000,
@@ -159,7 +159,7 @@ const prod11 = new Product(
     false
 );
 const prod12 = new Product(
-    "A1B2C3",
+    "A1B2C30",
     "MacBook 12'",
     "Experience the power of creativity with the MacBook Pro 13'4. Featuring 8GB of RAM and 512GB of storage, this laptop provides the performance and storage capacity needed for demanding tasks. The sleek design in silver and space gray adds a touch of sophistication. The high-resolution Retina display brings your visuals to life, whether you're editing photos, creating videos, or simply browsing the web. With the latest technology and a lightweight build, the MacBook Pro 13'4 is the perfect companion for professionals and creative individuals alike.",
     500000,
@@ -172,7 +172,7 @@ const prod12 = new Product(
     true
 );
 const prod13 = new Product(
-    "D4E5F6",
+    "D8E5F61",
     "MacBook Pro 15'4",
     "Unleash your productivity with the MacBook Pro 15'4. Boasting 8GB of RAM and 512GB of storage, this laptop is a powerhouse for multitasking and content creation. The silver and space gray colors add a touch of elegance to its design. The large Retina display provides a stunning visual experience for all your tasks, from graphic design to video editing. Whether you're a professional on the go or a creative individual working on intensive projects, the MacBook Pro 15'4 delivers the performance you need.",
     800000,
@@ -186,7 +186,7 @@ const prod13 = new Product(
     false
 );
 const prod14 = new Product(
-    "D4E5F60",
+    "D9E5F60",
     "MacBook Pro 17'",
     "Unleash your productivity with the MacBook Pro 15'4. Boasting 8GB of RAM and 512GB of storage, this laptop is a powerhouse for multitasking and content creation. The silver and space gray colors add a touch of elegance to its design. The large Retina display provides a stunning visual experience for all your tasks, from graphic design to video editing. Whether you're a professional on the go or a creative individual working on intensive projects, the MacBook Pro 15'4 delivers the performance you need.",
     900000,
@@ -199,7 +199,7 @@ const prod14 = new Product(
     false
 );
 const prod15 = new Product(
-    "G7H8I9",
+    "G7H8I91",
     "Lenovo",
     "Enhance your computing experience with the Lenovo 13'4 laptop. Featuring 8GB of RAM and 256GB of storage, this laptop offers a perfect balance of performance and portability. The sleek design, combined with the black and silver colors, adds a touch of sophistication. The 13'4 display provides crisp visuals for work or entertainment. With the latest technology and a compact form factor, the Lenovo laptop is an ideal choice for professionals and students alike.",
     75000,
@@ -226,7 +226,7 @@ const prod16 = new Product(
     true
 );
 const prod17 = new Product(
-    "J1K2L3",
+    "J1K2L31",
     "Samsung Galaxy S21",
     "Unleash the power of innovation with the Samsung Galaxy S21 smartphone. With 128GB of storage and a sleek black color, this smartphone combines style with functionality. The advanced camera system captures stunning photos and videos, whether you're exploring nature or documenting everyday moments. The vibrant display and powerful processor provide a seamless and immersive user experience. Stay connected with high-speed connectivity and enjoy all the features and apps the Galaxy S21 has to offer. Elevate your mobile experience with this cutting-edge smartphone from Samsung.",
     500000,
@@ -254,7 +254,7 @@ const prod18 = new Product(
     false
 );
 const prod19 = new Product(
-    "M4N5O6",
+    "M4N5O61",
     "Apple Watch Series 6",
     "Embrace a healthier lifestyle with the Apple Watch Series 6. With a 44mm display, GPS functionality, and a sleek space gray color, this smartwatch is the perfect companion for your fitness journey. Track your workouts, monitor your health, and stay connected on the go. The high-resolution Retina display provides clear visuals, whether you're checking notifications or tracking your fitness goals. With a variety of customizable watch faces and bands, the Apple Watch Series 6 lets you express your personal style while enjoying the latest in wearable technology.",
     300000,
@@ -296,7 +296,6 @@ const products = [
     prod10,
     prod12,
     prod3,
-    prod14,
     prod15,
     prod5,
     prod17,
