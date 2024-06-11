@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Cart from "./views/Cart";
 import Details from "./views/Details";
 import NotFound from "./views/NotFound";
+import OnSale from "./views/OnSale";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart />
+  },
+  {
+    path: "/onsale",
+    element: <OnSale />
   },
   {
     path: "*",

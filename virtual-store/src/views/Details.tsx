@@ -7,29 +7,31 @@ import ProductCheckout from "../components/ProductCheckout.js";
 import ProductDescription from "../components/ProductDescription.js";
 import ProductImages from "../components/ProductImages.js";
 import styles from "./Details.module.css";
+import NotFound from "./NotFound.js";
 function Details() {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
   const productsOnSale = products.filter((product) => product.onsale === true);
+  if (!product) {
+    return <NotFound />
+  } else {
+    return (
+      <>
+        <Header />
+        <main>
+          <div className={styles["details-container"]}>
+            <div id="details" className={styles["columns-container"]}>
+              <ProductImages id={product.id} />
+              <ProductDescription id={product.id} />
+              <ProductCheckout id={product.id} />
+            </div>
+            <div className={styles["sales-block"]}>
+              <h2 className={styles["sales-title"]}>Ofertas de la semana</h2>
 
+              <div className={styles["product-container"]} id="products">
 
-  return (
-    <>
-      <Header />
-      <main>
-        <div className={styles["details-container"]}>
-          <div id="details" className={styles["columns-container"]}>
-            <ProductImages id={product.id}/>
-            <ProductDescription id={product.id}/>
-            <ProductCheckout id={product.id}/>
-          </div>
-          <div className={styles["sales-block"]}>
-            <h2 className={styles["sales-title"]}>Ofertas de la semana</h2>
+                {productsOnSale?.map((product, index) => (
 
-            <div className={styles["product-container"]} id="products">
-
-              {productsOnSale?.map((product, index) => (
-                
 
                   <ProductCard
                     key={index}
@@ -39,16 +41,22 @@ function Details() {
                     color={product.colors[0]}
                     price={product.price}
                   />
-              ))}
+                ))}
+              </div>
+
+
             </div>
-
-
           </div>
-        </div>
-      </main>
-      <Footer />
-    </>
-  );
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </>
+    );
+
+  }
+
+
 }
 
 export default Details;

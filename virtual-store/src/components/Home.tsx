@@ -5,10 +5,9 @@ import Hero from "./Hero.tsx"
 import styles from "./Home.module.css"
 import ProductCard from "./ProductCard.tsx"
 function Home() {
-    console.log("Home")
     return (
-        <>
-            <body>
+        
+            <>
                 <Header />
                 <Hero firstText="tecnología" secondText="renovada" />
                 <main>
@@ -29,7 +28,7 @@ function Home() {
                 <footer>
                     <Footer />
                 </footer>
-            </body></>
+            </>
     )
 }
 
