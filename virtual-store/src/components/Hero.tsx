@@ -1,14 +1,14 @@
-import styles from "./Hero.module.css"
 
 
-function Hero({firstText, secondText}) {
+
+function Hero({firstText , secondText}) {
 
     return (
         <>
-            <section className={styles["hero-section"]}>
-                <article className={styles["hero-title"]}>
-                    <span className={styles["hero-span"]}>{firstText}</span>
-                    <span className={styles["hero-span"]}>{secondText}</span>
+            <section className="bg-local w-full h-[200px] bg-center bg-cover" style={{backgroundImage: "url('../public/hero_bg.png')"}}>
+                <article className="w-full h-full flex justify-center items-star flex-col text-white">
+                    <span className="text-xl">{firstText}</span>
+                    <span className="text-3xl">{secondText}</span>
                 </article>
             </section></>
     )
