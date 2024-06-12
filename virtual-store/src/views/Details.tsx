@@ -47,10 +47,8 @@ function Details() {
 
             </div>
           </div>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        </main> 
+          <Footer /> 
       </>
     );
 

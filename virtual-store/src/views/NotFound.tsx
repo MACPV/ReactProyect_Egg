@@ -25,9 +25,9 @@ function NotFound() {
                     </div>
                 </div>
             </section>
-            <footer>
+            
                     <Footer />
-                </footer>
+                
             </body>
         </>
     )

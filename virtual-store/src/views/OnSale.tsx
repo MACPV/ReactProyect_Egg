@@ -72,9 +72,9 @@ function OnSale() {
                         {`>`}
                     </button></div>
             </main>
-            <footer>
+            
                 <Footer />
-            </footer>
+            
         </>
     )
 }

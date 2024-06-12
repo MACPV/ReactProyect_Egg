@@ -30,9 +30,7 @@ function Cart() {
                     <button className={styles["cart-btn"]} id="buy" type="button">COMPRAR</button>
                 </div>
             </main>
-            <footer>
                 <Footer />
-            </footer>
         </>
     )
 } export default Cart
