@@ -5,7 +5,7 @@ function Header() {
     return (
         <>
             <header >
-                <div className={styles["header-container"]}>
+                <div className="w-full flex justify-between items-center grow object-cover">
                     <Link to="/" className={styles["header-logo"]}>
                         <img
                             className={styles["header-logo-img"]}

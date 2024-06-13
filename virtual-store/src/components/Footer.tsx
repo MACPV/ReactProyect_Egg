@@ -2,8 +2,8 @@
 function Footer() {
 
     return (
-        < footer className="min-h-[250px] bg-[#7525a7] flex flex-col items-center">
-            <div id="footer" className="w-[1080px] flex justify-between p-[10px]">
+        < footer className="min-h-[250px] bg-[#7525a7] flex flex-col items-center ">
+            <div id="footer" className="w-[1080px] flex justify-between p-[10px] sm:flex-row sm:items-start lg:w-[1080px]">
                 <ul className="w-[170px] list-none p-[10px]">
                     <li className="font-bold pb-[20px]">
                         <a className="text-white no-underline" href="./index.html">Ofertas</a>
@@ -60,7 +60,8 @@ function Footer() {
                     </li>
                 </ul>
             </div>
-            <div className="w-[1080px] border-t border-[#ba53fb] text-center text-white font-bold py-[30px] box-border">Curso de HTML + CSS 2023</div></ footer>)
+            <div className="w-full border-t border-[#ba53fb] text-center text-white font-bold py-[30px] box-border sm:flex-row sm:items-start lg:w-[1080px]">Curso de HTML + CSS 2023</div>
+        </ footer>)
 }
 
 export default Footer

@@ -22,15 +22,15 @@ function OnSale() {
     const sliceProducts = productsOnSale.slice(from, to);
 
     const handleNext = () => {
-        const newFrom = Math.min(from + 3, products.length - 3);
-        const newTo = Math.min(to + 3, products.length);
+        const newFrom = Math.min(from + 1, products.length - 3);
+        const newTo = Math.min(to + 1, products.length);
         setFrom(newFrom);
         setTo(newTo);
     };
 
     const handlePrevious = () => {
-        const newFrom = Math.max(from - 3, 0);
-        const newTo = Math.max(to - 3, 3);
+        const newFrom = Math.max(from - 1, 0);
+        const newTo = Math.max(to - 1, 3);
         setFrom(newFrom);
         setTo(newTo);
     };
@@ -48,7 +48,7 @@ function OnSale() {
 
 
                 <div id={styles["navigation-buttons"]}>
-                    <button onClick={handlePrevious} disabled={from >= products.length}>
+                    <button onClick={handlePrevious} disabled={from === 0}>
                         {`<`}
                     </button></div>
 
@@ -68,7 +68,7 @@ function OnSale() {
 
 
                 <div id={styles["navigation-buttons"]}>
-                    <button onClick={handleNext} disabled={to >= products.length}>
+                    <button onClick={handleNext} disabled={to >= productsOnSale.length}>
                         {`>`}
                     </button></div>
             </main>
