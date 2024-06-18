@@ -261,7 +261,7 @@ main {
     padding: 20px;
 }
 
-/* Footer  */
+/* Footer  
 footer {
     min-height: 250px;
     background-color: #7525a7;
@@ -306,7 +306,7 @@ footer {
     font-weight: bold;
     padding: 30px 0;
     box-sizing: border-box;
-}
+}*/
 
 /* MAIN PRODUCTS */
 .product-container {
@@ -316,7 +316,7 @@ footer {
     justify-content: space-between;
 }
 
-/* CARD */
+/* CARD
 .product-card {
     background-color: #f0f0f0;
     color: #383838;
@@ -377,4 +377,4 @@ footer {
 .product-tax-policy {
     font-size: 10px;
     font-weight: 300;
-}
+} */

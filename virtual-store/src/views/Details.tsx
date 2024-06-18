@@ -6,7 +6,6 @@ import ProductCard from "../components/ProductCard.js";
 import ProductCheckout from "../components/ProductCheckout.js";
 import ProductDescription from "../components/ProductDescription.js";
 import ProductImages from "../components/ProductImages.js";
-import styles from "./Details.module.css";
 import NotFound from "./NotFound.js";
 function Details() {
   const { productId } = useParams();
@@ -19,16 +18,16 @@ function Details() {
       <>
         <Header />
         <main>
-          <div className={styles["details-container"]}>
-            <div id="details" className={styles["columns-container"]}>
+          <div className="w-full flex flex-wrap ">
+            <div id="details" className="w-full flex flex-wrap justify-center">
               <ProductImages id={product.id} />
               <ProductDescription id={product.id} />
               <ProductCheckout id={product.id} />
             </div>
-            <div className={styles["sales-block"]}>
-              <h2 className={styles["sales-title"]}>Ofertas de la semana</h2>
+            <div className="w-full flex flex-wrap  justify-center ">
+              <h2 className= "block text-center text-xl justify-center text-white items-center lg:text-4xl">Ofertas de la semana</h2>
 
-              <div className={styles["product-container"]} id="products">
+              <div className="w-full flex flex-wrap justify-center" id="products">
 
                 {productsOnSale?.map((product, index) => (
 
