@@ -4,6 +4,7 @@ import styles from "./ProductCheckout.module.css";
 
 
 function ProductCheckout(id) {
+    
     const productId = id.id
     const product = products.find((product) => product.id === productId);
     const cart = JSON.parse(localStorage.getItem("cart") ?? "[]");

@@ -111,8 +111,8 @@ const prod8 = new Product(
     300,
     2,
     [
-        "https://i.postimg.cc/2ymFtsTn/kindle2.jpg",
-        "https://i.postimg.cc/nzqG0FKH/kindle1.jpg",
+        "/public/kindle2.jpg",
+        "/public/kindle1.jpg",
     ],
     ["Black", "White"],
     true

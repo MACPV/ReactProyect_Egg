@@ -1,8 +1,15 @@
+import { useState } from "react";
 import products from "../assets/products.js";
 
 function ProductDescription(id) {
     const productId = id.id
     const product = products.find((product) => product.id === productId);
+    const [selectColor, setSelectColor] = useState(product.colors[0])
+
+    const handleColorChange = (event) => {
+        setSelectColor(event.target.value);
+    };
+
     return (
         <>
             <div className="w-[340px] flex flex-col bg-[#ebebeb] rounded-[5px]  p-[10px] m-[10px]">
@@ -15,6 +22,8 @@ function ProductDescription(id) {
                             typeof="text"
                             aria-placeholder="Selecciona un color"
                             id="color"
+                            value={selectColor}
+                            onChange={handleColorChange}
                         >
                             {product.colors.map((color, index) => (
                                 <option key={index} value={color}>{color}</option>

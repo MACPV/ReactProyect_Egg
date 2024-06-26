@@ -1,4 +1,5 @@
 import products from "../assets/products.js"
+import Product from "../interfaces/Product.ts"
 import Footer from "./Footer.tsx"
 import Header from "./Header.tsx"
 import Hero from "./Hero.tsx"
@@ -11,7 +12,7 @@ function Home() {
                 <Hero firstText={"Tecnología"} secondText={"Renovada"} />
                 <main className="w-full flex justify-center items-center p-[20px]">
                     <div className="w-[1080px] flex flex-wrap justify-between" id="products">
-                        {products.map((each) => (
+                        {products.map((each: Product) => (
                             <ProductCard
                                 key={each.id}
                                 id={each.id}

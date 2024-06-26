@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
-function ProductCard(prop) {
+import Product from "../interfaces/ProductCard.ts"
+function ProductCard(prop: Product) {
     const { id, title, color, price, image } = prop
     return (
         <>

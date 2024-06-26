@@ -11,6 +11,7 @@ function Details() {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
   const productsOnSale = products.filter((product) => product.onsale === true);
+  
   if (!product) {
     return <NotFound />
   } else {
@@ -21,11 +22,17 @@ function Details() {
           <div className="w-full flex flex-wrap ">
             <div id="details" className="w-full flex flex-wrap justify-center">
               <ProductImages id={product.id} />
-              <ProductDescription id={product.id} />
-              <ProductCheckout id={product.id} />
+              
+                <ProductDescription
+                  id={product.id}
+                />
+              
+                <ProductCheckout id={product.id}
+                />
+              
             </div>
             <div className="w-full flex flex-wrap  justify-center ">
-              <h2 className= "block text-center text-xl justify-center text-white items-center lg:text-4xl">Ofertas de la semana</h2>
+              <h2 className="block text-center text-xl justify-center text-white items-center lg:text-4xl">Ofertas de la semana</h2>
 
               <div className="w-full flex flex-wrap justify-center" id="products">
 
@@ -46,8 +53,8 @@ function Details() {
 
             </div>
           </div>
-        </main> 
-          <Footer /> 
+        </main>
+        <Footer />
       </>
     );
 
